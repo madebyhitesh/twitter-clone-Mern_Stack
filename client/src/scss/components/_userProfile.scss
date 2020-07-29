@@ -1,0 +1,63 @@
+.profile-page{
+    min-height: 100vh;
+    width: 100vw;
+    padding: 1rem 1rem;
+    nav {
+        @include flex-center(row);
+        i{
+          font-size: 2rem;
+        }
+        h1 {
+          font-size: 2rem;
+        }
+      }
+      header{
+          @include flex-center(column);
+          padding-top: 2rem;
+          .hero{
+              img{
+                  height:200px;
+                  width:200px;
+                  border-radius: 50%;
+                  background-color: white;
+              }
+          }
+          h1{
+            padding: .6rem 0;
+            font-size: 1.3rem;
+          }
+          .call-to-action{
+            width: 100%;
+            padding: 1rem 0;
+            @include flex-space(space-around,row);
+            input{
+              display: none;
+            }
+            button,label{
+              border:none;
+              width: 100px;
+              background-color:var(--primaryColor);
+              color: white;
+              font-size: 1rem;
+              padding:.5rem .5rem;
+              border-radius: 6px;
+            }
+            button[type=submit]{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+            }
+          }
+          @media all and (min-width:550px){
+            .call-to-action{
+              width: 60%;
+            }
+          }
+      }
+
+      main{
+        @include flex-center(column)
+      }
+}
+

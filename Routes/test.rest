@@ -1,0 +1,25 @@
+
+Post http://localhost:5000/users/register
+Content-type: application/json
+
+{
+   "name": "test4",
+   "email":"hitesh2@gmail.com",
+   "password":"honey"
+}
+
+###
+
+
+Post http://localhost:5000/users/login
+Content-type: application/json
+
+{
+   "name": "test4",
+   "password": "honey"
+}
+
+###
+
+GET http://localhost:5000/posts/profile/5f1ab57556006912bc5b5036
+

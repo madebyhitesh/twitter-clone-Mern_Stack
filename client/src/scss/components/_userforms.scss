@@ -1,0 +1,134 @@
+.user-form {
+  @include flex-center(row);
+  min-height: 100vh;
+  .form-container {
+
+    @include flex-space(space-between, column);
+    min-height: 90vh;
+    width: 90vw;
+    nav {
+      @include flex-center(column);
+      .twitter-icon {
+        font-size: 3rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+    .login-form {
+      @include flex-space(space-between, column);
+      h5{color:red}
+      .feild{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          height: 10vh;
+          width: 100%;
+          margin: 1rem 0;
+          input{
+              font-size: 1.2rem;
+              padding: .3rem;
+              width: 70vw;
+              outline: none;
+              border: 1px solid var(--textColor);
+              background-color: transparent;
+              border-radius:5px;
+            }
+        h1{font-size: .8rem;}
+      }
+    .form-btn{
+        font-family: 'Montserrat', sans-serif;
+        margin-top: .6rem;
+        font-size: 1.4rem;
+        padding: .3rem;
+        width: 70vw;
+        border: none;
+        border-radius:5px;
+        background-color: var(--primaryColor);
+        color: var(--iconColor);
+    }
+    }
+    &.addpost-form{
+      @include flex-center(column); 
+      form{
+        .feild{
+          textarea{
+            width: 100%;
+            padding: .3rem;
+            font-size: 1.3rem;
+            background-color: transparent;
+            color: var(--textColor);
+            border: 2px solid var(--primaryColor);
+          }
+          label{
+            background-color: var(--primaryColor);
+            color: white;
+            padding: .3rem .5rem;
+            border-radius: 6px;
+          }
+          input{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .footer{
+      @include flex-center(column);
+      h1{font-size: 1.2rem;}
+  }
+}
+
+
+@media all and (min-width:500px){
+  .user-form{
+    .form-container{
+      .login-form{
+          .feild{
+            input{
+              width: 50vw;
+            }
+          }
+          .form-btn{
+            width: 50vw;
+          }
+      }
+    }
+  }
+
+}
+@media all and (min-width:750px){
+  .user-form{
+    .form-container{
+      .login-form{
+          .feild{
+            input{
+              width: 45vw;
+            }
+          }
+          .form-btn{
+            width: 45vw;
+          }
+      }
+    }
+  }
+
+}
+@media all and (min-width:982px){
+  .user-form{
+    .form-container{
+      .login-form{
+          .feild{
+            input{
+              width: 30vw;
+            }
+          }
+          .form-btn{
+            width: 30vw;
+          }
+      }
+    }
+  }
+
+}

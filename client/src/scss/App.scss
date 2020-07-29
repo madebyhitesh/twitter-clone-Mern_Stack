@@ -1,0 +1,50 @@
+*,*::after,*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+// declaring variables
+:root {
+    --primaryColor: #349eff;
+    --cardBg: rgb(255, 255, 255);
+    --BgColor:  #ffffff;
+    --textColor : black;
+    --iconColor : rgb(241, 255, 254);
+    --twitter-icon-color : white;
+}
+
+// complete app styling for normal mode
+.App {
+    min-height: 100vh;
+    background-color: var(--BgColor);
+    color: var(--textColor);
+    font-family: 'Montserrat', sans-serif;
+  }
+
+// complete app styling for dark mode
+.App.dark-mode {
+    --cardBg: #000000;
+    --BgColor: #000000;
+    --textColor : rgb(236, 236, 236);
+    --iconColor : black;
+    --twitter-icon-color : black;
+}
+// utitlities for the styling
+@import './components/utilities';
+
+//user form styling imported here
+@import './components/userforms';
+
+//Nav bar styling import
+@import './components/navbar';
+
+//home page styling import
+@import './components/homepage';
+
+//posts styling import
+@import './components/allPosts';
+
+//styling of user profile page
+@import './components/userProfile'
+

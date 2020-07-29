@@ -1,0 +1,33 @@
+@mixin flex-center($direction) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:$direction ;
+    
+}
+@mixin flex-space($space,$direction) {
+    display: flex;
+    align-items: center;
+    justify-content: $space;
+    flex-direction:$direction ;
+    
+}
+
+.primary-text{
+    color: var(--primaryColor)
+}
+button,label{
+    cursor: pointer;
+}
+img{
+    background-color: white;
+}
+input{
+    background-color: transparent;
+}
+p{
+    font-family: 'Nunito', sans-serif;
+}
+a{
+    text-decoration: none;
+}
